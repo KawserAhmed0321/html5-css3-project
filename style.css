@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #121212;
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*  banner */
+
+.banner{
+    display: flex;
+    height: 100vh;
+}
+.banner-left{
+    flex: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-title{
+    margin-bottom: 10px;
+    font-size: 60px;
+    white-space: nowrap;
+    position: relative;
+    color: transparent;
+}
+
+.banner-title::before{
+    content: 'Programming Hero';
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    color: #22bedd;
+    animation: typing 3s linear infinite;
+
+}
+/* animation */
+@keyframes typing{
+    0%{
+        content: 'p|';
+    }
+    4%{
+        content: 'pr|';
+    }
+    8%{content: 'pro|';}
+    12%{content: 'prog|';}
+    16%{content: 'progr|';}
+    20%{content: 'progra|';}
+    24%{content: 'program|';}
+    28%{content: 'programm|';}
+    32%{content: 'programmi|';}
+    36%{content: 'programmmin |';}
+    40%{content: 'programmming|';}
+    44%{content: 'programming h|';}
+    48%{content: 'programming he|';}
+    52%{content: 'programming her|';}
+    56%{content: 'programming hero|';}
+    64%,
+    83%{content: 'programming her|';}
+    84%{content: 'programming he|';}
+    85%{content: 'programming h|';}
+    86%{content: 'programming |';}
+    87%{content: 'programmin|';}
+    88%{content: 'programmi|';}
+    89%{content: 'programm|';}
+    90%{content: 'program|';}
+    91%{content: 'progra|';}
+    92%{content: 'progr|';}
+    93%{content: 'prog|';}
+    94%{content: 'pro|';}
+    95%{content: 'pr|';}
+    96%{content: 'p|';}
+    97%{content: '|';}
+    98%{content: '|';}
+    99%{content: '|';}
+    100%{content:'|' ;}
+    
+}
+
+.banner-text{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.love-botton{
+    outline: 0;
+    font-size:18px;
+    padding: 10px  30px;
+    color: rgb(224, 224, 240);
+    background-color: #22bedd;
+    border: 4ps solid #22bedd;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.love-botton:hover{
+    background-color: transparent;
+    color: #22bedd;
+}
+
+.banner-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
